@@ -1,0 +1,145 @@
+@import "../parciales/variables";
+@import "../parciales/tipografia";
+@import "../parciales/responsive";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    font-family: $font-gene;
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+
+}
+.promobtn {
+   border-radius: 5px;
+   margin-left: 1rem !important;
+}
+.dropdown-menu {
+    background-color: $color2;
+    :hover {
+        background-color: $color1;
+    }
+}
+.hero {
+    position: relative !important;
+    display: inline-block !important;
+    text-align: center !important;
+}
+.h1hero {
+    position: absolute !important;
+   
+}
+h1 {
+    color: $color1;
+    text-shadow: $shadow;
+    font-size: 8rem !important;
+    font-family: $font-title;
+    padding-right: 2rem;
+    padding-top: 4rem;
+}
+h4,h5 {
+    font-size: 3rem;
+}
+h6 {
+    font-size: 2rem;
+    text-align: center;
+}
+.zebra__principal {
+    background: $background;
+}
+.nav {
+   background-image: $background ;
+}
+.accordion {
+   color: $color5;
+   
+   .accordion-button{
+       background: $background;
+       border: 0px;
+       box-shadow: $shadow;
+   }
+   .accordion-body {
+       background-color: $color2
+   }
+}
+.card {
+    box-shadow: $shadow;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+.btn {
+        background-color: $color2;
+        border-color: $color1;
+}
+footer {
+    background-color:darken($color: #000000, $amount: 0)    
+}
+
+// masaje
+.hero__tratamientos {
+    width: 96%;
+    max-width: 1260px;
+    margin: 0 auto;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.cardmasaje {
+    background-color: rgba(0, 0, 0, 0.411);
+    border-radius: 10px;
+    box-shadow: $shadow;
+}
+.subtitulo {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    h3 {
+        padding: 1rem 2rem 1rem 2rem;
+    }
+}
+.img-thumbnail {
+    height: 14em;
+}
+.ticker-wrap {
+  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 4rem;
+  background-color: rgba(#000, 0.9); 
+  padding-left: 100%;
+  box-sizing: content-box;
+
+  .ticker {
+
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;  
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+
+    -webkit-animation-iteration-count: infinite; 
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+   -webkit-animation-name: ticker;
+           animation-name: ticker;
+    -webkit-animation-duration: $duration;
+            animation-duration: $duration;
+
+    &__item {
+
+      display: inline-block;
+
+      padding: 0 2rem;
+      font-size: 2rem;
+      color: white;   
+
+    }
+
+  }
+
+}
